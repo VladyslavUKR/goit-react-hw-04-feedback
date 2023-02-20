@@ -5,6 +5,8 @@ import Section from './Section';
 import Notification from './Notification';
 
 const FeedbackCustomer = () => {
+  //  * зробив один стейт так як вони однієї сутності *
+
   const [vote, setVote] = useState({ good: 0, neutral: 0, bad: 0 });
   const { good, neutral, bad } = vote;
 
