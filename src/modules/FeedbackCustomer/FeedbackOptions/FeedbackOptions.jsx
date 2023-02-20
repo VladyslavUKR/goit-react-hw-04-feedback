@@ -3,11 +3,7 @@ import css from './feedback-options.module.css';
 
 const FeedbackOptions = ({ addVote, option }) => {
   const optionElement = option.map((item, index) => (
-    <button
-      key={index}
-      onClick={() => addVote(`${item}`)}
-      className={css.btnVote}
-    >
+    <button key={index} onClick={() => addVote(item)} className={css.btnVote}>
       {item}
     </button>
   ));
